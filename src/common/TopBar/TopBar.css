@@ -1,0 +1,105 @@
+.top-bar {
+  display: flex;
+  align-items: center;
+  background-color: #1c1c1c;
+  width: 100vw;
+  height: 4.5em;
+  z-index: 10;
+  position: fixed;
+  border-bottom: 1px solid rgba(47, 51, 54, 255);
+}
+
+.top-Company{
+  display: flex;
+  align-items: center;
+  background-color: #1c1c1c;
+  width: 100vw;
+  height: 4.5em;
+  z-index: 10;
+  position: fixed;
+  box-shadow: 5px 3px 5px black;
+  gap: 25%;
+}
+
+.imgAndSearch{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-top-bar {
+  margin-left: 1.75rem;
+  width: 100px;
+  height: 22px;
+}
+
+@media (min-width: 768px) {
+  .hide-sidebar-button {
+    display: none;
+  }
+}
+
+.sidebar-logo__div {
+  margin-top: 2.375em; /* 70px en unidades em */
+  padding: 1.75em; /* 1.75rem en unidades em */
+  overflow-y: auto; /* Mostrar barra de desplazamiento vertical automáticamente si es necesario */
+}
+
+.sidebar-logo__div > img {
+  width: 10.9375em; /* 175px en unidades em */
+}
+
+.Nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.Nav a {
+  width: 100%;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0.55rem;
+}
+
+
+.Nav a:hover::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0.125em; /* 2px en unidades em */
+  height: 1.0625em; /* 17px en unidades em */
+  background: #2121fa;
+}
+
+.Nav a:hover {
+  color: #2121fa;
+}
+
+.Nav a.active {
+  color: blue;
+}
+
+/* Estilos para la barra lateral en pantalla pequeña */
+@media screen and (min-width: 768px) {
+  .sidebar-menu a .text {
+    display: block; /* Muestra el texto */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-menu a .text {
+    display: block; /* Muestra el texto */
+    font-size: 0.6em;
+  }
+
+  .sidebar-menu a {
+    flex-direction: column;
+    line-height: 20px; /* Aplica la altura de línea al texto */
+  }
+}
+

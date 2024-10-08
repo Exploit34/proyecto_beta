@@ -1,0 +1,108 @@
+.sidebar-container {
+  grid-column: 1;
+  position: fixed;
+  height: 100vh;
+  background-color: #1c1c1c;
+  width: 25%;
+  transition: width 0.3s ease;
+  z-index: 3;
+  border: 1px solid rgba(47, 51, 54, 255);
+}
+
+.div-general.sidebar-expanded .sidebar-container {
+  width: 100%;
+}
+
+.sidebar-logo__div {
+  margin-top: 4.375em; /* 70px en unidades em */
+  padding: 1.75em; /* 1.75rem en unidades em */
+}
+
+.sidebar-logo__div > img {
+  width: 10.9375em; /* 175px en unidades em */
+}
+
+.sidebar-menu {
+  margin-top: 0.9375em; /* 15px en unidades em */
+  margin-left: 0.3125em; /* 5px en unidades em */
+}
+
+.sidebar-menu a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.menu a {
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.55rem;
+}
+
+.sidebar-menu a .icon {
+  margin-right: 0.5rem;
+}
+
+.sidebar-menu a .text {
+  display: none; /* Oculta el texto por defecto */
+}
+
+.sidebar-menu a:hover::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0.125em; /* 2px en unidades em */
+  height: 1.0625em; /* 17px en unidades em */
+  background: #287bff;
+}
+
+.sidebar-menu a:hover {
+  color: #287bff;
+}
+
+.sidebar-menu img {
+  height: 1.5625em; /* 25px en unidades em */
+  margin-right: 0.625em; /* 1rem en unidades em */
+}
+
+.button-logout {
+  border: none;
+  background-color: #287bff;
+  padding: 0.5em 2em;
+  color: #ffff;
+}
+
+.button-logout:hover {
+  background-color: #133495;
+}
+
+/* Estilos para la barra lateral en pantalla pequeña */
+@media screen and (min-width: 768px) {
+  .sidebar-menu a .text {
+    display: block; /* Muestra el texto */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-menu a .text {
+    display: block; /* Muestra el texto */
+    font-size: 0.6em;
+  }
+
+  .sidebar-menu a {
+    flex-direction: column;
+    line-height: 20px; /* Aplica la altura de línea al texto */
+  }
+
+  .sidebar-menu button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}

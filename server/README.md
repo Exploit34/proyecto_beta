@@ -1,0 +1,1 @@
+ccrypt -d file.cpt

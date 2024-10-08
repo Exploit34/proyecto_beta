@@ -1,0 +1,49 @@
+/* Footer.css */
+
+/* Contenedor principal del footer */
+.footer-container {
+  padding: 1rem;
+  background-color: #242424;
+  color: #fff;
+}
+
+/* Contenido del footer */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.footer-logo {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-logo h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Información de contacto */
+.footer-contact {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-contact p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+/* Derechos de autor y créditos */
+.footer-copyright {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer-copyright p {
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}

@@ -1,0 +1,5 @@
+.div-general {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 45% 30%;
+}

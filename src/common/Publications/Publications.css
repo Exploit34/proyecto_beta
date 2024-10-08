@@ -1,0 +1,325 @@
+.post-profile h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #eee;
+  margin-left: 5px;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+}
+
+.likes i {
+  font-size: 20px;
+  margin-left: 10px;
+  color: #eee;
+}
+
+.likes span {
+  font-size: 14px;
+  margin-left: 7px;
+  color: #eee;
+}
+
+.modal {
+  position: absolute;
+  background-color: #1c1c1c;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modalChangeProfile {
+  position: absolute;
+  background-color: #1c1c1c;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 999;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal i {
+  color: #2121fa;
+}
+
+/* Animaciones */
+@keyframes growFromButton {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -10px) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -5px) scale(1);
+  }
+}
+
+@keyframes shrinkToButton {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -5px) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -10px) scale(0.5);
+  }
+}
+
+/* Estilos para la punta del modal */
+.modal::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #1c1c1c;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.open {
+  animation: growFromButton 0.3s ease-out forwards;
+}
+
+.closed {
+  animation: shrinkToButton 0.3s ease-out forwards;
+}
+
+.modal-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 80%;
+}
+
+.modal-close {
+  background: transparent;
+  border: none;
+}
+
+.modal-button-lovers {
+  background: transparent;
+  border: none;
+}
+
+.modal-buttons i {
+  font-family: "remixicon" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+}
+
+/* Publicaciones */
+.derecha {
+  grid-column: 2;
+  display: grid;
+  grid-template-rows: 10% 80%;
+  width: 100%;
+}
+
+.publications {
+  grid-row: 1;
+  grid-column: 2;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.publication {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  letter-spacing: 1px;
+  padding: 20px 1px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  width: 63%;
+  border-radius: 25px;
+  border-color: transparent;
+  background: #1c1c1c;
+}
+
+.post-box {
+  width: 100%;
+  background-color: #1c1c1c;
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.post-box > button {
+  border: none;
+  background: transparent;
+}
+
+.love-button,
+.comment-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s ease;
+}
+
+.love-button i,
+.comment-button i {
+  font-size: 24px;
+  transition: color 0.2s ease;
+  color: #969a9f;
+}
+
+.love-button:hover,
+.comment-button:hover {
+  transform: scale(1.1);
+}
+
+.love-button:hover i {
+  color: #ff0000;
+  transform: scale(1.2);
+}
+
+.love-count {
+  color: #ffff;
+}
+
+.comment-button:hover i {
+  color: #ff0000;
+  transform: scale(1.2);
+}
+
+.number-likes{
+  background-color: transparent;
+  border: none;
+  color: #eee;
+  width: 10px;
+}
+
+.number-likes:hover{
+  color: #ff0000;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .post-profile .post-img {
+    right: 100px;
+  }
+}
+
+/* Media queries para pantallas de 992px o menos */
+@media screen and (max-width: 992px) {
+  /* Ajustes específicos para pantallas de hasta 992px */
+
+  .post-profile .post-img {
+    right: 80px;
+  }
+}
+
+/* Media queries para pantallas de 768px o menos */
+@media screen and (max-width: 768px) {
+  .post-profile .post-img {
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior en pantallas más pequeñas */
+    right: 10px; /* Ajusta la distancia desde el lado derecho en pantallas más pequeñas */
+  }
+}
+
+/* Media queries para pantallas de 576px o menos */
+@media screen and (max-width: 576px) {
+  .post-profile .post-img {
+    bottom: 5px;
+    right: 5px;
+  }
+}
+
+/* Media queries para pantallas de 320px o menos */
+@media screen and (max-width: 320px) {
+  .post-profile .post-img {
+    bottom: 5px;
+    right: 5px;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9%);
+  /* Fondo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  /* Z-index alto para que se sobreponga a todo */
+}
+
+.modal-review {
+  position: absolute;
+  background-color: #1c1c1c;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 10%);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 50%;
+  border-radius: 8px;
+  z-index: 10000;
+  margin-left: 49px
+  /* Asegúrate de que el modal esté por encima del overlay */
+}
+
+.modal-review button {
+  background-color: #242424;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.Tile-Review, .P-content-Review {
+  /* Estilos para el contenido del modal */
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.default-button {
+  background: #287bff;
+  color: #fff;
+}
+
+.options-delete{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}

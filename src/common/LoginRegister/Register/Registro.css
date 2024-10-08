@@ -1,0 +1,150 @@
+.signUpUserCompany-active {
+  color: #2d0a80;
+  text-decoration: none;
+}
+
+.signupUserCompany-inactive {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.companyorUser {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.options {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.errors {
+  color: red;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+}
+
+.errors p {
+  margin: 0;
+}
+
+.bullet {
+  list-style-type: disc; /* Establece el tipo de marcador como un punto (viñeta) */
+  margin-left: 20px; /* Opcional: Ajusta el margen izquierdo para la viñeta */
+  background: red;
+}
+
+@media (min-width: 1024px) {
+  .signUpUserCompany-active {
+    color: #2d0a80;
+    text-decoration: none;
+  }
+
+  .signupUserCompany-inactive {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  .companyorUser {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .options {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+  }
+
+  .errors {
+    color: red;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+  }
+
+  .errors p {
+    margin: 0;
+  }
+
+  .bullet {
+    list-style-type: disc; /* Establece el tipo de marcador como un punto (viñeta) */
+    margin-left: 20px; /* Opcional: Ajusta el margen izquierdo para la viñeta */
+    background: red;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Define las reglas para una amplia variedad de tamaños de pantalla */
+@media only screen and (min-width: 768px) {
+  /* Tus estilos aquí */
+  .signUpUserCompany-active {
+    color: #2d0a80;
+    text-decoration: none;
+  }
+
+  .signupUserCompany-inactive {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  .companyorUser {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .options {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+  }
+
+  .errors {
+    color: red;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+  }
+
+  .errors p {
+    margin: 0;
+  }
+
+  .bullet {
+    list-style-type: disc; /* Establece el tipo de marcador como un punto (viñeta) */
+    margin-left: 20px; /* Opcional: Ajusta el margen izquierdo para la viñeta */
+    background: red;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+}
